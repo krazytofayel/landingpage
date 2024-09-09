@@ -393,10 +393,27 @@
         top: -120px;
         right: 60px;
         display: flex;
+        justify-content: space-between;
         gap: 10px;
         z-index: 10;
     }
-
+ @media (max-width: 576px) {
+    .custom-carousel-controls {
+        top: auto;  
+        bottom: -10px; 
+        right: 50%;  
+      
+        transform: translateX(50%); 
+        width: 100%;
+    }
+       .custom-carousel-controls .carousel-control-prev .custom-arrow {
+        transform: rotate(180deg); /* Rotate the right  to point left */
+    }
+    
+    .custom-carousel-controls .carousel-control-next .custom-arrow {
+        transform: rotate(180deg); 
+    }
+}
     .custom-carousel-btn {
         background-color: #fcfafa;
         border: 2px solid #ef8655;
@@ -425,7 +442,6 @@
         margin-right: 1rem;
         overflow: hidden;
     }
-
 
 
 
@@ -755,7 +771,7 @@
 
 
     <!-- customer review start -->
-    <div class="container mb-5">
+    <div class="container " style="margin-bottom: 6rem !important;">
         <h3 class="font-weight-bold text-start gradient-header review-text mb-5"> See what our customer <br> say about
             us</h3>
         <div>
@@ -955,7 +971,7 @@
     <div>
 
 
-        <div style="background: #0B5678; padding: 15px;">
+        <div style="background: #0B5678; padding: 35px;">
 
             <div>
                 <h2 style="color: white; text-align: center; font-weight: 700;">If you don’t find your service need please <br> contact
