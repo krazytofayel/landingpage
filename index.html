@@ -407,11 +407,11 @@
         width: 100%;
     }
        .custom-carousel-controls .carousel-control-prev .custom-arrow {
-        transform: rotate(180deg); /* Rotate the right  to point left */
+        transform: rotateX(-180deg); /* rotate  right  to  left */
     }
     
     .custom-carousel-controls .carousel-control-next .custom-arrow {
-        transform: rotate(180deg); 
+        transform: rotateX(-180deg); 
     }
 }
     .custom-carousel-btn {
@@ -771,8 +771,8 @@
 
 
     <!-- customer review start -->
-    <div class="container " style="margin-bottom: 6rem !important;">
-        <h3 class="font-weight-bold text-start gradient-header review-text mb-5"> See what our customer <br> say about
+    <div class="container p-4 p-md-0" style="margin-bottom: 4rem !important;">
+        <h3 class="font-weight-bold text-center text-md-start gradient-header review-text mb-5"> See what our customer <br> say about
             us</h3>
         <div>
             <header class="header-slider">
@@ -948,12 +948,12 @@
                                 <button class="carousel-control-prev custom-carousel-btn" type="button"
                                     data-bs-target="#carouselCustomerReviews" data-bs-slide="prev">
                                     <span class="visually-hidden">Previous</span>
-                                    <i class="fas fa-chevron-right"></i>
+                                    <i class="fas fa-chevron-right custom-arrow"></i>
                                 </button>
                                 <button class="carousel-control-next custom-carousel-btn me-2" type="button"
                                     data-bs-target="#carouselCustomerReviews" data-bs-slide="next">
                                     <span class="visually-hidden">Next</span>
-                                    <i class="fas fa-chevron-left"></i>
+                                    <i class="fas fa-chevron-left custom-arrow"></i>
                                 </button>
                             </div>
                         </div>
