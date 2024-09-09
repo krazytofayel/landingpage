@@ -17,6 +17,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+        
 </head>
 <style>
     .break-btn-wrapper {
@@ -26,7 +28,6 @@
     .break-btn {
         position: relative;
         color: #1A5D88;
-
         font-weight: 600;
         text-transform: capitalize;
         text-decoration: none;
@@ -72,8 +73,6 @@
 
     .opr-bag-deco {
         background-image: url(./images//Oprtu-back-img.png);
-
-
     }
 
     .opprtu-textdecoration {
@@ -81,8 +80,6 @@
         font-size: 25px;
         font-weight: 400;
     }
-
-
 
     .download-app-wrapper {
         padding: 40px 0;
@@ -105,8 +102,6 @@
     .mb-0 {
         margin-bottom: 0 !important;
     }
-
-
 
     /* 10%off start */
 
@@ -140,6 +135,7 @@
 
     .down-arrow {
         font-size: 12px;
+        margin-bottom: 15px;
     }
 
     @media (max-width: 1199px) {
@@ -159,6 +155,9 @@
             display: none;
         }
     }
+
+
+    
 
 
 
@@ -239,15 +238,15 @@
     }
 
 
-    @media (max-width: 768px) {
+    @media (max-width: 320px) {
 
         .bg-overlay1 {
-            background: url("/images/Maskgroup1.jpg");
+            background: url("/images/Group1810.png");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
-            height: 60vh;
-            /* Adjust height for smaller screens */
+            height: 100vh;
+           
         }
     }
 
@@ -275,28 +274,44 @@
         font-size: 14px;
     }
 
-    .learn-more-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1rem;
-        border: 2px solid #F76A2A;
-        background-color: transparent;
-        padding: 5px;
-        cursor: pointer;
-        border-radius: 2rem;
-        color: white;
-        font-weight: 500;
-        font-size: 12px;
-        width: 15%;
-        min-width: fit-content;
-        transition: background-color 0.3s ease;
-    }
+.learn-more-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    border: 2px solid #F76A2A;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    cursor: pointer;
+    border-radius: 2rem;
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+    min-width: fit-content;
+    width: auto;
+    transition: background-color 0.3s ease;
+    text-decoration: none; 
+}
 
-    .learn-more-button:hover {
-        background-color: #F76A2A;
-        color: #fff;
+.learn-more-button:hover {
+    background-color: #F76A2A;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .learn-more-button {
+        width: 100%;
     }
+}
+
+@media (min-width: 769px) {
+    .learn-more-button {
+        width: auto;
+    }
+}
 
 
     @media (max-width:320px) {
@@ -314,10 +329,7 @@
             font-size: 18px;
         }
 
-        .learn-more-button {
-            width: auto;
-            padding: 10px 20px;
-        }
+      
 
 
     }
@@ -332,10 +344,7 @@
             font-size: 25px;
         }
 
-        .learn-more-button {
-            width: 15%;
-            padding: 12px 24px;
-        }
+   
     }
 
 
@@ -388,7 +397,9 @@
     }
 
     .custom-carousel-btn {
-        background-color: #f76a2a;
+        background-color: #fcfafa;
+        border: 2px solid #ef8655;
+        color: #ef8655;
         border-radius: 50%;
         padding: 10px;
         width: 50px;
@@ -425,58 +436,72 @@
         border-radius: 50%;
 
         padding: 5px;
-        width: 60px;
-        height: 60px;
+        width: 90px;
+        height: 90px;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: background-color 0.3s ease, color 0.3s ease;
         cursor: pointer;
+        background-color: #edf0f1;
 
     }
 
-    .custom-btn i {
-        font-size: 1.5rem;
 
-    }
-
-    .custom-btn:hover {
-        background-color: #f76a2a;
-        color: white;
-
-    }
+ 
 
     .custom-btn:focus {
         outline: none;
 
     }
 
-    .hover-text:hover {
+    /* .hover-text:hover {
         color: #f76a2a;
         font-weight: 400;
-    }
+    } */
 
 
     @media (max-width:320px) {
         .review-text {
             font-size: 15px;
         }
-         .custom-carousel-controls {
-        position: absolute;
-        top: -65px;
-        right: 60px;
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-        z-index: 10;
-    }
+
+        .custom-carousel-controls {
+            position: absolute;
+            top: -65px;
+            right: 60px;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            z-index: 10;
+        }
     }
 
     @media (max-width:584px) {
         .review-text {
             font-size: 27px;
         }
+        .download-app-sub-title{
+            margin-top: 20px;
+        }
     }
+
+
+
+
+
+    .form-check{
+        padding-left: 0px;
+
+    }
+
+@media (min-width:1200px){
+    .why-choose-img{
+        height: 500px;
+    }
+}
+
+
 </style>
 
 <body>
@@ -492,16 +517,15 @@
             <h4 class="slider-paragraph-text">one stop solution for your it needs,<br>
                 order any service anytime</h4>
 
-            <div class="d-flex flex-row gap-2">
-                <button class="learn-more-button py-2 px-4 mb-2 mb-md-0" role="switch" aria-checked="true"
-                    style="background-color: #F76A2A;">
-                    Ready to book
-                </button>
-                <button class="learn-more-button py-2 px-4 mb-2 mb-md-0" role="switch" aria-checked="true">
-                    Visit website
-                </button>
-
+            <div class="d-flex flex-sm-row flex-column gap-2">
+                <a href="https://example.com/book-now" class="learn-more-button   mb-2 mb-md-0">
+                    Book now
+                </a>
+                <a href="https://example.com/learn-more" class="learn-more-button   mb-2 mb-md-0">
+                    Learn more
+                </a>
             </div>
+
         </div>
     </div>
 
@@ -509,7 +533,7 @@
 
     <section class="bg-light download-app-wrapper">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center flex-column flex-md-row">
                 <div class="col">
                     <div class="text-md-start text-center">
                         <h2 class="text-blue download-app-title mb-0">App is available for free on app
@@ -520,7 +544,7 @@
                 </div>
                 <div class="col">
                     <div
-                        class="d-flex flex-column flex-md-row justify-content-md-end justify-content-center align-items-center gap-2 mt-md-0 mt-2">
+                        class="d-flex flex-column flex-md-row justify-content-md-end justify-content-center align-items-center gap-2 mt-md-0 mt-4">
                         <div><a href="https://play.google.com/store/apps/details?id=com.krazyit.geekify" target="_blank"
                                 rel="noopener noreferrer"><img
                                     src="	https://geekscrs.com.au/images/global/google-play.webp" alt="App Download"
@@ -542,21 +566,24 @@
     <section class="py-md-5 py-4 mb-md-5 mb-4">
         <div class="container-md container-fluid">
             <div class="text-center pb-md-5 pb-3 pt-md-4 pt-3">
-                <h1 class="gradient-header mb-0 p-1">Book online and get 10% off</h1>
+                <h1 class=" mb-0 p-1">Book online and get <span style="color: #F76A2A; font-weight: 600;">10%</span> off</h1>
                 <p class="text-500 text-20">Easiest way to get a service</p>
             </div>
 
 
             <div class="row row-cols-1 row-cols-sm-5 row-cols-md-5 ms-xl-5 ms-0 booking-step-wrapper">
 
-                <div class="col hover-text">
+                <div class="col ">
                     <div class="d-sm-flex gap-3 d-block align-items-center">
-                        <div class="d-sm-block d-flex align-items-center">
+                        <div class="d-sm-block d-flex align-items-center flex-column flex-md-row">
 
 
-                            <button class="custom-btn" type="button">
-                                <i class="fa-regular fa-hand-point-up"></i></i>
-                            </button>
+                        
+                        <button class="custom-btn" data-hover-src="/images/Group1805.png" data-default-src="/images/Group1737.png"
+                            type="button">
+                            <img src="/images/Group1737.png" class="img-fluid custom-btn-img" alt="">
+                        </button>
+
                             <p class="mb-0 text-18 mt-2 d-sm-block d-none step-title" style="line-height: 1;"><b
                                     class="text-blue ">Select</b> a<br>
                                 service</p>
@@ -567,18 +594,18 @@
 
 
                         </div>
-                        <div class="mt-sm-0 mt-2 ms-sm-0 ms-3"><img
+                        <div class="mt-sm-0 mt-2 ms-sm-0 ms-3" style="text-align: center;"><img
                                 src="	https://geekscrs.com.au/images/home/arrow-1.svg" alt="Book Online" loading="lazy"
-                                class="step-arrow"> <span class="text-blue d-sm-none d-block down-arrow"><i
-                                    class="fa-solid fa-down-long"></i></span></div>
+                                class="step-arrow"> <span class="text-blue d-sm-none d-block down-arrow"><img src="/images/Group1744.png" class="img-fluid" style="height: 60px;" alt=""></span></div>
                     </div>
 
                 </div>
-                <div class="col hover-text">
+                <div class="col">
                     <div class="d-sm-flex gap-3 d-block align-items-center">
-                        <div class="d-sm-block d-flex align-items-center">
-                            <button class="custom-btn" type="button">
-                                <i class="fa-solid fa-file-circle-check"></i>
+                        <div class="d-sm-block d-flex align-items-center flex-column flex-md-row">
+                            <button class="custom-btn" data-hover-src="/images/icon2_hover.png" data-default-src="/images/icon2.png"
+                                type="button">
+                                <img src="/images/icon2.png" class="img-fluid custom-btn-img" alt="">
                             </button>
                             <p class="mb-0 text-18 mt-2 d-sm-block d-none step-title" style="line-height: 1;"><b
                                     class="text-blue">Pick</b>
@@ -590,17 +617,18 @@
 
                         </div>
 
-                        <div class="mt-sm-0 mt-2 ms-sm-0 ms-3"><img
+                        <div class="mt-sm-0 mt-2 ms-sm-0 ms-3" style="text-align: center;"><img
                                 src="https://geekscrs.com.au/images/home/arrow-1.svg" alt="Book Online" loading="lazy"
-                                class="step-arrow"> <span class="text-blue d-sm-none d-block down-arrow"><i
-                                    class="fa-solid fa-down-long"></i></span></div>
+                                class="step-arrow"> <span class="text-blue d-sm-none d-block down-arrow"><img src="/images/Group1744.png" class="img-fluid" style="height: 60px;" alt=""></span></div>
                     </div>
 
                 </div>
                 <div class="col hover-text">
                     <div class="d-sm-flex gap-3 d-block align-items-center">
-                        <div class="d-sm-block d-flex align-items-center"><button class="custom-btn" type="button">
-                                <i class="fa-solid fa-file-signature"></i>
+                        <div class="d-sm-block d-flex align-items-center flex-column flex-md-row">
+
+                            <button class="custom-btn" data-hover-src="/images/icon3_hover.png" data-default-src="/images/icon3.png" type="button">
+                                <img src="/images/icon3.png" class="img-fluid custom-btn-img" alt="">
                             </button>
                             <p class="mb-0 text-18 mt-2 d-sm-block d-none step-title" style="line-height: 1;"><b
                                     class="text-blue">Provide</b> <br>
@@ -610,17 +638,18 @@
                             </p>
 
                         </div>
-                        <div class="mt-sm-0 mt-2 ms-sm-0 ms-3"><img
+                        <div class="mt-sm-0 mt-2 ms-sm-0 ms-3" style="text-align: center;"><img
                                 src="https://geekscrs.com.au/images/home/arrow-1.svg" alt="Book Online" loading="lazy"
-                                class="step-arrow"> <span class="text-blue d-sm-none d-block down-arrow"><i
-                                    class="fa-solid fa-down-long"></i></span></div>
+                                class="step-arrow"> <span class="text-blue d-sm-none d-block down-arrow"><img src="/images/Group1744.png" class="img-fluid" style="height: 60px;" alt=""></span></div>
                     </div>
 
                 </div>
                 <div class="col hover-text">
                     <div class="d-sm-flex gap-3 d-block align-items-center">
-                        <div class="d-sm-block d-flex align-items-center"><button class="custom-btn" type="button">
-                                <i class="fa-solid fa-money-check-dollar"></i>
+                        <div class="d-sm-block d-flex align-items-center flex-column flex-md-row">
+
+                            <button class="custom-btn" data-hover-src="/images/icon4_hover.png" data-default-src="/images/icon4.png" type="button">
+                                <img src="/images/icon4.png" class="img-fluid custom-btn-img" alt="">
                             </button>
                             <p class="mb-0 text-18 mt-2 d-sm-block d-none step-title" style="line-height: 1;"><b
                                     class="text-blue">Make</b> <br>
@@ -630,17 +659,18 @@
                             </p>
 
                         </div>
-                        <div class="mt-sm-0 mt-2 ms-sm-0 ms-3"><img
+                        <div class="mt-sm-0 mt-2 ms-sm-0 ms-3" style="text-align: center;"><img
                                 src="https://geekscrs.com.au/images/home/arrow-1.svg" alt="Book Online" loading="lazy"
-                                class="step-arrow"> <span class="text-blue d-sm-none d-block down-arrow"><i
-                                    class="fa-solid fa-down-long"></i></span></div>
+                                class="step-arrow"> <span class="text-blue d-sm-none d-block down-arrow"><img src="/images/Group1744.png" class="img-fluid" style="height: 60px;" alt=""></span></div>
                     </div>
 
                 </div>
                 <div class="col hover-text">
-                    <div class="d-flex">
-                        <div class="d-sm-block d-flex align-items-center"><button class="custom-btn" type="button">
-                                <i class="fa-solid fa-person-walking-arrow-right"></i>
+                    <div class=" d-sm-flex gap-3 d-block align-items-center">
+                        <div class="d-sm-block d-flex align-items-center flex-column flex-md-row">
+
+                            <button class="custom-btn" data-hover-src="/images/icon5_hover.png" data-default-src="/images/icon5.png" type="button">
+                                <img src="/images/icon5.png" class="img-fluid custom-btn-img" alt="">
                             </button>
                             <p class="mb-0 text-18 mt-2 d-sm-block d-none step-title" style="line-height: 1;"><b
                                     class="text-blue">Geeks</b> will be <br> on your way</p>
@@ -659,7 +689,7 @@
     <div style=" background: #0B567833;">
 
         <div class="container ">
-            <div class="row  p-0 p-md-5">
+            <div class="row  p-4 p-md-5">
                 <div class="col-md-6  d-flex flex-column align-items-start justify-content-center ">
                     <h1 style=" font-weight: 600; color:  #0B5678;">Why Choose Us?</h1>
                     <h3 class="nabber-text mt-3 ">
@@ -667,27 +697,28 @@
                         business is simplified.
                     </h3>
 
-                    <div class="mt-3">
+                    <div class="mt-3" >
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <!-- <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked> -->
+                             <img src="/images/Icons.png" class="img-fluid" style="width: 20px;" alt="">
                             <label class="form-check-label" for="flexCheckDefault">
                                 Rework Assurance
                             </label>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <div class="form-check mt-2">
+                            <img src="/images/Icons.png" class="img-fluid" style="width: 20px; " alt="">
                             <label class="form-check-label" for="flexCheckChecked">
                                 Background Check
                             </label>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1" checked>
+                        <div class="form-check mt-2">
+                            <img src="/images/Icons.png" class="img-fluid" style="width: 20px;" alt="">
                             <label class="form-check-label" for="flexCheckDefault1">
                                 24/7 Support
                             </label>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" checked>
+                        <div class="form-check mt-2">
+                            <img src="/images/Icons.png" class="img-fluid" style="width: 20px;" alt="">
                             <label class="form-check-label" for="flexCheckChecked2">
                                 Expert Professional
                             </label>
@@ -702,7 +733,7 @@
 
                 </div>
                 <div class="col-md-6">
-                    <img class="img-fluid " style="height: 600px; width: 100%;" src="images/Group1779.png" alt="..." />
+                    <img class="img-fluid why-choose-img p-2"  src="images/Group1779.png" alt="..." />
                 </div>
             </div>
         </div>
@@ -736,7 +767,7 @@
                                 <div class="carousel-item active">
                                     <div class="row" style="    --bs-gutter-y: 8px;">
                                         <div class="col-md-4">
-                                            <div class="card" style="border-radius: 10px; ">
+                                            <div class="card border-0 border-bottom border-primary shadow-sm" style="border-radius: 10px;">
                                                 <div class="card-body">
                                                     <p class="card-text">Thank You for your service. I am very pleased
                                                         with the result. I have seen exponencial growth in my business
@@ -752,7 +783,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="card" style="border-radius: 10px; ">
+                                            <div class="card border-0 border-bottom border-primary shadow-sm" style="border-radius: 10px; ">
                                                 <div class="card-body">
                                                     <p class="card-text">Thank You for your service. I am very pleased
                                                         with the result. I have seen exponencial growth in my business
@@ -768,7 +799,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="card" style="border-radius: 10px; ">
+                                            <div class="card border-0 border-bottom border-primary shadow-sm" style="border-radius: 10px; ">
                                                 <div class="card-body">
                                                     <p class="card-text">Thank You for your service. I am very pleased
                                                         with the result. I have seen exponencial growth in my business
@@ -790,7 +821,7 @@
                                 <div class="carousel-item">
                                     <div class="row" style="    --bs-gutter-y: 8px;">
                                         <div class="col-md-4">
-                                            <div class="card" style="border-radius: 10px; ">
+                                            <div class="card border-0 border-bottom border-primary shadow-sm" style="border-radius: 10px; ">
                                                 <div class="card-body">
                                                     <p class="card-text">Thank You for your service. I am very pleased
                                                         with the result. I have seen exponencial growth in my business
@@ -806,7 +837,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="card" style="border-radius: 10px; ">
+                                            <div class="card border-0 border-bottom border-primary shadow-sm" style="border-radius: 10px; ">
                                                 <div class="card-body">
                                                     <p class="card-text">Thank You for your service. I am very pleased
                                                         with the result. I have seen exponencial growth in my business
@@ -822,7 +853,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="card" style="border-radius: 10px; ">
+                                            <div class="card border-0 border-bottom border-primary shadow-sm" style="border-radius: 10px; ">
                                                 <div class="card-body">
                                                     <p class="card-text">Thank You for your service. I am very pleased
                                                         with the result. I have seen exponencial growth in my business
@@ -844,7 +875,7 @@
                                 <div class="carousel-item">
                                     <div class="row" style="    --bs-gutter-y: 8px;">
                                         <div class="col-md-4">
-                                            <div class="card" style="border-radius: 10px; ">
+                                            <div class="card border-0 border-bottom border-primary shadow-sm" style="border-radius: 10px; ">
                                                 <div class="card-body">
                                                     <p class="card-text">Thank You for your service. I am very pleased
                                                         with the result. I have seen exponencial growth in my business
@@ -860,7 +891,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="card" style="border-radius: 10px; ">
+                                            <div class="card border-0 border-bottom border-primary shadow-sm" style="border-radius: 10px; ">
                                                 <div class="card-body">
                                                     <p class="card-text">"Thank You for your service. I am very pleased
                                                         with the result. I have seen exponencial growth in my business
@@ -876,7 +907,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="card" style="border-radius: 10px; ">
+                                            <div class="card border-0 border-bottom border-primary shadow-sm " style="border-radius: 10px; ">
                                                 <div class="card-body">
                                                     <p class="card-text">"Thank You for your service. I am very pleased
                                                         with the result. I have seen exponencial growth in my business
@@ -926,16 +957,15 @@
         <div style="background: #0B5678; padding: 15px;">
 
             <div>
-                <h2 style="color: white; text-align: center;">If you don’t find your service need please <br> contact
+                <h2 style="color: white; text-align: center; font-weight: 600;">If you don’t find your service need please <br> contact
                     with
                     us</h2>
             </div>
             <div class="d-flex flex-column flex-md-row gap-2 align-items-center justify-content-center">
-                <button class="footer-btn" style="background-color: #edf0f1; color: #383838;"><i
-                        class="fa-solid fa-phone-volume"></i> 1300 894 946
+                <button class="footer-btn" > <i class="fa-solid fa-phone-volume"></i> 1300 894 946
 
                 </button>
-                <button class="footer-btn"> <i class="fa-solid fa-clock-rotate-left"></i> Request call back</button>
+                <button class="footer-btn"><i class="fa-solid fa-clock-rotate-left fa-flip-horizontal" ></i> Request call back</button>
                 <button class="footer-btn"><i class="fa-regular fa-calendar-days"></i> Book Online</button>
             </div>
 
@@ -945,6 +975,33 @@
 
 
     <!-- customer review end -->
+     <script>
+      // select all buttons
+        var buttons = document.querySelectorAll('.custom-btn');
+
+        // Loop through all button 
+        buttons.forEach(function (button) {
+            var img = button.querySelector('img');
+            var hoverSrc = button.getAttribute('data-hover-src');
+            var defaultSrc = button.getAttribute('data-default-src');
+
+            //  default src show first
+            img.src = defaultSrc;
+
+            button.addEventListener('mouseover', function () {
+                img.src = hoverSrc; 
+                button.style.backgroundColor = '#f76a2a'; 
+            });
+
+            button.addEventListener('mouseout', function () {
+                img.src = defaultSrc; 
+                button.style.backgroundColor = '#edf0f1'; 
+            });
+        });
+
+
+
+     </script>
 
 
 
