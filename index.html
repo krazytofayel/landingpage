@@ -400,7 +400,7 @@
  @media (max-width: 576px) {
     .custom-carousel-controls {
         top: auto;  
-        bottom: -10px; 
+        bottom: -20px; 
         right: 50%;  
       
         transform: translateX(50%); 
@@ -518,8 +518,32 @@
         height: 500px;
     }
 }
+/* slider card css */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 100%; */
+  min-height: 150px;
+}
 
+.card-body {
+  flex-grow: 1; 
 
+.card-text {
+  margin-bottom: auto; 
+}
+.quote-icon {
+    font-size: 40px;
+    line-height: 0;
+}
+
+.brand-color {
+    color:#f76a2a;
+}
+.quote-left:before {
+    content: "\f10d";
+}
 </style>
 
 <body>
@@ -536,7 +560,7 @@
                 order any service anytime</h4>
 
             <div class="d-flex flex-sm-row flex-column gap-2">
-                <a href="https://example.com/book-now" class="learn-more-button   mb-2 mb-md-0">
+                <a href="https://book-a-geek/book-now" class="learn-more-button   mb-2 mb-md-0">
                     Book now
                 </a>
                 <a href="https://example.com/learn-more" class="learn-more-button   mb-2 mb-md-0">
@@ -786,49 +810,36 @@
                                     <div class="row" style="    --bs-gutter-y: 8px;">
                                         <div class="col-md-4">
                                             <div class="card border-0 border-bottom border-primary shadow-sm" style="border-radius: 10px;">
-                                                <div class="card-body">
-                                                    <p class="card-text">Thank You for your service. I am very pleased
-                                                        with the result. I have seen exponencial growth in my business
-                                                        and its all thanks to your amazing service</p>
-                                                    <div class="d-flex align-items-center pt-2">
+                                                <div class="card-body d-flex gap-2">
+                                                    <span class="brand-color quote-icon"><i class="fas fa-quote-left"></i></span>
+                                                    <p class="card-text">After an upgrade a scanning issue became apparent so a call back required. Fixed within a couple of minutes. Very
+                                                    personable and efficient consultant.</p>
+                                                    <!-- <div class="d-flex align-items-center pt-2">
 
                                                         <div>
                                                             <h5 class="card-title fw-bold">June Doe</h5>
                                                             <span class="text-secondary">CEO, Example Company</span>
                                                         </div>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="card border-0 border-bottom border-primary shadow-sm" style="border-radius: 10px; ">
-                                                <div class="card-body">
-                                                    <p class="card-text">Thank You for your service. I am very pleased
-                                                        with the result. I have seen exponencial growth in my business
-                                                        and its all thanks to your amazing service</p>
-                                                    <div class="d-flex align-items-center pt-2">
-
-                                                        <div>
-                                                            <h5 class="card-title fw-bold">June Doe</h5>
-                                                            <span class="text-secondary">CEO, Example Company</span>
-                                                        </div>
-                                                    </div>
+                                                <div class="card-body d-flex gap-2">
+                                                    <span class="brand-color quote-icon"><i class="fas fa-quote-left"></i></span>
+                                                    <p class="card-text">Excellent service. Fixed the problem and identified other issues which were affecting the efficiency of my Mac and
+                                                    suggested a better virus protection and upgrade. Very happy. 5 Stars!</p>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="card border-0 border-bottom border-primary shadow-sm" style="border-radius: 10px; ">
-                                                <div class="card-body">
-                                                    <p class="card-text">Thank You for your service. I am very pleased
-                                                        with the result. I have seen exponencial growth in my business
-                                                        and its all thanks to your amazing service</p>
-                                                    <div class="d-flex align-items-center pt-2">
-
-                                                        <div>
-                                                            <h5 class="card-title fw-bold">June Doe</h5>
-                                                            <span class="text-secondary">CEO, Example Company</span>
-                                                        </div>
-                                                    </div>
+                                                <div class="card-body d-flex gap-2">
+                                                    <span class="brand-color quote-icon"><i class="fas fa-quote-left"></i></span>
+                                                    <p class="card-text">Excellent service - prompt, helpful &amp; thorough. Computer's running perfectly again, many thanks.</p>
+                                                   
                                                 </div>
                                             </div>
                                         </div>
@@ -840,49 +851,29 @@
                                     <div class="row" style="    --bs-gutter-y: 8px;">
                                         <div class="col-md-4">
                                             <div class="card border-0 border-bottom border-primary shadow-sm" style="border-radius: 10px; ">
-                                                <div class="card-body">
-                                                    <p class="card-text">Thank You for your service. I am very pleased
-                                                        with the result. I have seen exponencial growth in my business
-                                                        and its all thanks to your amazing service</p>
-                                                    <div class="d-flex align-items-center pt-2">
-
-                                                        <div>
-                                                            <h5 class="card-title fw-bold">June Doe</h5>
-                                                            <span class="text-secondary">CEO, Example Company</span>
-                                                        </div>
-                                                    </div>
+                                                <div class="card-body d-flex gap-2">
+                                                    <span  class="brand-color quote-icon"><i  class="fas fa-quote-left"></i></span>
+                                                    <p class="card-text " style="margin-top: 15px !important;">Sam is the most obliging, helpful man. I am so pleased to have him as my technician</p>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="card border-0 border-bottom border-primary shadow-sm" style="border-radius: 10px; ">
-                                                <div class="card-body">
-                                                    <p class="card-text">Thank You for your service. I am very pleased
-                                                        with the result. I have seen exponencial growth in my business
-                                                        and its all thanks to your amazing service</p>
-                                                    <div class="d-flex align-items-center pt-2">
-
-                                                        <div>
-                                                            <h5 class="card-title fw-bold">June Doe</h5>
-                                                            <span class="text-secondary">CEO, Example Company</span>
-                                                        </div>
-                                                    </div>
+                                                <div class="card-body d-flex gap-2">
+                                                    <span class="brand-color quote-icon"><i class="fas fa-quote-left"></i></span>
+                                                    <p class="card-text" style="margin-top: 15px !important;">Efficient, courteous and on top of the tasks. Recovered my lost data and kept me informed at each step. Very satisfied
+                                                    customer.</p>
+                                                   
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="card border-0 border-bottom border-primary shadow-sm" style="border-radius: 10px; ">
-                                                <div class="card-body">
-                                                    <p class="card-text">Thank You for your service. I am very pleased
-                                                        with the result. I have seen exponencial growth in my business
-                                                        and its all thanks to your amazing service</p>
-                                                    <div class="d-flex align-items-center pt-2">
-
-                                                        <div>
-                                                            <h5 class="card-title fw-bold">June Doe</h5>
-                                                            <span class="text-secondary">CEO, Example Company</span>
-                                                        </div>
-                                                    </div>
+                                                <div class="card-body d-flex gap-2">
+                                                    <span class="brand-color quote-icon"><i class="fas fa-quote-left"></i></span>
+                                                    <p class="card-text" style="margin-top: 15px !important;">Quick service. Polite and competent service man. I will be using you again and have passed your number to friends.</p>
+                                                   
                                                 </div>
                                             </div>
                                         </div>
@@ -894,49 +885,65 @@
                                     <div class="row" style="    --bs-gutter-y: 8px;">
                                         <div class="col-md-4">
                                             <div class="card border-0 border-bottom border-primary shadow-sm" style="border-radius: 10px; ">
-                                                <div class="card-body">
-                                                    <p class="card-text">Thank You for your service. I am very pleased
-                                                        with the result. I have seen exponencial growth in my business
-                                                        and its all thanks to your amazing service</p>
-                                                    <div class="d-flex align-items-center pt-2">
-
-                                                        <div>
-                                                            <h5 class="card-title fw-bold">June Doe</h5>
-                                                            <span class="text-secondary">CEO, Example Company</span>
-                                                        </div>
-                                                    </div>
+                                                <div class="card-body d-flex gap-2">
+                                                    <span class="brand-color quote-icon"><i class="fas fa-quote-left"></i></span>
+                                                    <p class="card-text">Sam is the Man! He was friendly and helpful, all the time. He was confident and knowledgeable. And yes, I would use
+                                                    Geeks Sydney again.</p>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="card border-0 border-bottom border-primary shadow-sm" style="border-radius: 10px; ">
-                                                <div class="card-body">
-                                                    <p class="card-text">"Thank You for your service. I am very pleased
-                                                        with the result. I have seen exponencial growth in my business
-                                                        and its all thanks to your amazing service</p>
-                                                    <div class="d-flex align-items-center pt-2">
-
-                                                        <div>
-                                                            <h5 class="card-title fw-bold">June Doe</h5>
-                                                            <span class="text-secondary">CEO, Example Company</span>
-                                                        </div>
-                                                    </div>
+                                                <div class="card-body d-flex gap-2">
+                                                    <span class="brand-color quote-icon"><i class="fas fa-quote-left"></i></span>
+                                                    <p class="card-text">Quick service. Polite and competent service man. I will be using you again and have passed your number to friends.</p>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="card border-0 border-bottom border-primary shadow-sm " style="border-radius: 10px; ">
-                                                <div class="card-body">
-                                                    <p class="card-text">"Thank You for your service. I am very pleased
-                                                        with the result. I have seen exponencial growth in my business
-                                                        and its all thanks to your amazing service</p>
-                                                    <div class="d-flex align-items-center pt-2">
+                                                <div class="card-body d-flex gap-2">
+                                                    <span class="brand-color quote-icon"><i class="fas fa-quote-left"></i></span>
+                                                    <p class="card-text">Service from technician Sam was first class. He turned up on time, sorted out my problems , called me back when he said
+                                                    he would and was very friendly and professional. I would absolutely recommend Geeks Sydney!!</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                                        <div>
-                                                            <h5 class="card-title fw-bold">June Doe</h5>
-                                                            <span class="text-secondary">CEO, Example Company</span>
-                                                        </div>
-                                                    </div>
+                                <!-- Fourth Slider -->
+                                <div class="carousel-item">
+                                    <div class="row" style="    --bs-gutter-y: 8px;">
+                                        <div class="col-md-4">
+                                            <div class="card border-0 border-bottom border-primary shadow-sm" style="border-radius: 10px; ">
+                                                <div class="card-body d-flex gap-2">
+                                                    <span class="brand-color quote-icon"><i class="fas fa-quote-left"></i></span>
+                                                    <p class="card-text">Very happy with the service. Carl was very knowledgeable and the computer is set up and working well Thank you</p>
+                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card border-0 border-bottom border-primary shadow-sm" style="border-radius: 10px; ">
+                                                <div class="card-body d-flex gap-2">
+                                                    <span class="brand-color quote-icon"><i class="fas fa-quote-left"></i></span>
+                                                    <p class="card-text">Really really happy with the quick and efficient service. Very helpful, did the work required and explained everything
+                                                    to me.</p>
+                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card border-0 border-bottom border-primary shadow-sm " style="border-radius: 10px; ">
+                                                <div class="card-body d-flex gap-2">
+                                                    <span class="brand-color quote-icon"><i class="fas fa-quote-left"></i></span>
+                                                    <p class="card-text">Excellent service. Just what I needed. All issues resolved promptly. Carl was excellent and I am so happy to have found
+                                                    someone to help with my computer!</p>
+                                
                                                 </div>
                                             </div>
                                         </div>
