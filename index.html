@@ -405,13 +405,14 @@
       
         transform: translateX(50%); 
         width: 100%;
+        
     }
        .custom-carousel-controls .carousel-control-prev .custom-arrow {
-        transform: rotateX(-180deg); /* rotate  right  to  left */
+        transform: rotate(180deg); /* rotate  right  to  left */
     }
     
     .custom-carousel-controls .carousel-control-next .custom-arrow {
-        transform: rotateX(-180deg); 
+        transform: rotate(180deg); 
     }
 }
     .custom-carousel-btn {
@@ -945,16 +946,17 @@
 
                             <!-- Carousel Controls -->
                             <div class="custom-carousel-controls ">
+                                <button class="carousel-control-next custom-carousel-btn me-2" type="button" data-bs-target="#carouselCustomerReviews"
+                                    data-bs-slide="next">
+                                    <span class="visually-hidden">Next</span>
+                                    <i class="fas fa-chevron-left custom-arrow"></i>
+                                </button>
                                 <button class="carousel-control-prev custom-carousel-btn" type="button"
                                     data-bs-target="#carouselCustomerReviews" data-bs-slide="prev">
                                     <span class="visually-hidden">Previous</span>
                                     <i class="fas fa-chevron-right custom-arrow"></i>
                                 </button>
-                                <button class="carousel-control-next custom-carousel-btn me-2" type="button"
-                                    data-bs-target="#carouselCustomerReviews" data-bs-slide="next">
-                                    <span class="visually-hidden">Next</span>
-                                    <i class="fas fa-chevron-left custom-arrow"></i>
-                                </button>
+                               
                             </div>
                         </div>
 
@@ -1017,6 +1019,19 @@
         });
 
 
+
+     </script>
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+                if (window.innerWidth <= 576) {
+                    const prevButton = document.querySelector('.carousel-control-prev');
+                    const nextButton = document.querySelector('.carousel-control-next');
+
+                    // Swap the data-bs-slide values
+                    prevButton.setAttribute('data-bs-slide', 'next');
+                    nextButton.setAttribute('data-bs-slide', 'prev');
+                }
+            });
 
      </script>
 
